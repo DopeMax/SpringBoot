@@ -1,10 +1,7 @@
 package com.atguigu.springboot.bean;
 
-/**
- * @author Chen
- * @created 2018-05-20-11:11.
- */
 public class Dog {
+
     private String name;
     private Integer age;
 
