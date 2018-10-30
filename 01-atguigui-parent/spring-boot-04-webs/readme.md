@@ -131,7 +131,7 @@ localhost:8080/ 找index页面
 
 ## 3、模板引擎
 JSP、Velocity、Freemarker、Thymeleaf   
-![](https://note.youdao.com/yws/api/personal/file/8EA3313FF8164E15A595E80EDB4BAAA5?method=download&shareKey=dcceed3044b95e2020fa006532f22d73)
+![](https://note.youdao.com/yws/api/personal/file/8EA3313FF8164E15A595E80EDB4BAAA5?method=download&shareKey=dcceed3044b95e2020fa006532f22d73)   
 SpringBoot推荐的Thymeleaf；
 
 语法更简单，功能更强大；
@@ -190,7 +190,7 @@ public class ThymeleafProperties {
 ### 3.1 语法规则
 1. th:text；改变当前元素里面的文本内容    
 
-    th：任意html属性；来替换原生属性的值
+    th：任意html属性；来替换原生属性的值   
     ![](https://note.youdao.com/yws/api/personal/file/2C1A0085A23540D2826D15CDA033CAEA?method=download&shareKey=60a50b7591f5479707679f78c0d7e03a)
 
 2. 表达式语法怎么写
@@ -410,12 +410,12 @@ https://docs.spring.io/spring-boot/docs/1.5.17.RELEASE/reference/htmlsingle/#boo
         @Import(DelegatingWebMvcConfiguration.class)
         public @interface EnableWebMvc {
         ``` 
-    2. 2
+    2. 继承了WebMvcConfigurationSupport
         ```java
         @Configuration
         public class DelegatingWebMvcConfiguration extends WebMvcConfigurationSupport {
         ``` 
-    3. 3
+    3. 所以@ConditionalOnMissingBean(WebMvcConfigurationSupport.class)这句判断就生效了
         ```java
         @Configuration
         @ConditionalOnWebApplication
@@ -438,3 +438,6 @@ https://docs.spring.io/spring-boot/docs/1.5.17.RELEASE/reference/htmlsingle/#boo
 1. SpringBoot在自动配置很多组件的时候，先看容器中有没有用户自己配置的（@Bean、@Component）如果有就用用户配置的，如果没有，才自动配置；如果有些组件可以有多个（ViewResolver）将用户配置的和自己默认的组合起来；
 2. 在SpringBoot中会有非常多的xxxConfigurer帮助我们进行扩展配置
 3. 在SpringBoot中会有很多的xxxCustomizer帮助我们进行定制配置
+
+下一篇：实验
+- https://github.com/DopeMax/SpringBoot/tree/master/01-atguigui-parent/spring-boot-04-webs/spring-boot-04-web-restfulcrud
