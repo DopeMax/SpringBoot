@@ -4,5 +4,11 @@ http://luckyqiang.top/2018/07/10/Spring%20Boot/
 第一节：springboot 入门
 - https://github.com/DopeMax/SpringBoot/tree/master/01-atguigui-parent/spring-boot-01-helloworld  
 
-第二节：配置文件
+第二节：springboot 配置文件
 - https://github.com/DopeMax/SpringBoot/tree/master/01-atguigui-parent/spring-boot-02-config
+
+第三节：springboot 日志
+- https://github.com/DopeMax/SpringBoot/tree/master/01-atguigui-parent/spring-boot-03-logging
+
+## 更多整合的例子
+https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples

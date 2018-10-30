@@ -10,22 +10,23 @@ SpringBoot使用一个全局的配置文件，配置文件名是固定的；
 
 YAML（YAML Ain’t Markup Language）
 
-​ YAML A Markup Language：是一个标记语言
+YAML A Markup Language：是一个标记语言
 
-​ YAML isn’t Markup Language：不是一个标记语言；
+YAML isn’t Markup Language：不是一个标记语言；  
+
 标记语言：
 
-​ 以前的配置文件；大多都使用的是 xxxx.xml文件；
+以前的配置文件；大多都使用的是 xxxx.xml文件；
 
-​ YAML：以数据为中心，比json、xml等更适合做配置文件；
+YAML：以数据为中心，比json、xml等更适合做配置文件；
 
-​ YAML：配置例子
+YAML：配置例子
 
 ```
 server:
   port: 8081
 ```
-​ XML：
+XML：
 
 ```xml
 <server>
