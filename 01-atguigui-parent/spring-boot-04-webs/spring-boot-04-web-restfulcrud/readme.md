@@ -29,6 +29,7 @@ public class MyMvcConfig extends WebMvcConfigurerAdapter {
 }
 ```
 ### 1.2 国际化
+以前springmvc写国际化步骤： 
 1. **编写国际化配置文件**；
 2. 使用ResourceBundleMessageSource管理国际化资源文件；
 3. 在页面使用fmt:message取出国际化内容。
@@ -110,6 +111,7 @@ public class MyMvcConfig extends WebMvcConfigurerAdapter {
     </html>
     ``` 
     效果：根据浏览器语言设置的信息切换了国际化；  
+    
     原理：  
     国际化Locale（区域信息对象）；LocaleResolver（获取区域信息对象）； 
     ```java
