@@ -396,7 +396,8 @@ public class LoginHandlerInterceptor implements HandlerInterceptor {
 
 默认日期是按照/的方式；    
 ### 1.7 CRUD-员工修改   
-修改添加二合一表单   
+修改添加二合一表单      
+- 注意put请求，页面上的写法` <input type="hidden" name="_method" value="put" th:if="${emp!=null}"/>`
 ```html
 <!--需要区分是员工修改还是添加；-->
 <form th:action="@{/emp}" method="post">
@@ -442,6 +443,7 @@ public class LoginHandlerInterceptor implements HandlerInterceptor {
 </form>
 ``` 
 ### 1.8 CRUD-员工删除   
+- 自定义属性，`th:attr="del_uri=@{/emp/}+${emp.id}"`
 ```html
 <tr th:each="emp:${emps}">
     <td th:text="${emp.id}"></td>
