@@ -64,6 +64,7 @@
                         <th>gender</th>
                         <th>department</th>
                         <th>birth</th>
+                        <th>operation</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -84,7 +85,7 @@
                 </table>
             </div>
         </main>
-        <form id="deleteEmpForm" th:action="@{/emp/}+${emp.id}" method="post">
+        <form id="deleteEmpForm" method="post">
             <input type="hidden" name="_method" value="delete">
         </form>
     </div>
@@ -102,8 +103,8 @@
 <script>
     feather.replace()
     $(".deleteBtn").click(function () {
-        var del_uri=$(this).attr("del_uri")
-        $("#deleteEmpForm").attr("action",del_uri).submit();
+        var del_uri = $(this).attr("del_uri");
+        $("#deleteEmpForm").attr("action", del_uri).submit();
         return false;
     })
 </script>
