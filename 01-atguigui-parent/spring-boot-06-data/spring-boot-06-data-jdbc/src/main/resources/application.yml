@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: paoding
+    password: paoding
+    url: jdbc:mysql://192.168.1.138:3306/paoding?useUnicode=true&characterEncoding=utf8
